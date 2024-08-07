@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-let isStopped = false;
+let isStopped = true;
 let currentIndex = 0;
 
 async function isProxyWorking(proxy) {
