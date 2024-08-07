@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: puppeteer-app
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    routes:
+      - type: https
+        path: /
