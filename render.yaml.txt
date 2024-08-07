@@ -3,6 +3,7 @@ services:
     name: puppeteer-app
     env: node
     buildCommand: npm install
+      npm install puppeteer --unsafe-perm=true --allow-root  express puppeteer-extra puppeteer-extra-plugin-stealth cors proxy-agent node-fetch
     startCommand: npm start
     plan: free
     routes:
